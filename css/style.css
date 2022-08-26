@@ -1,7 +1,8 @@
 ﻿/* Navbar ====================================== */
 @import url(materialize.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&family=Prompt:wght@300&family=Sriracha&family=Thasadith&display=swap');
 .navbar {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Prompt', sans-serif;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -7526,7 +7527,7 @@ fieldset[disabled] .form-control {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Prompt', sans-serif;
   background: #fdfdfd;
   width: 300px;
   overflow: hidden;

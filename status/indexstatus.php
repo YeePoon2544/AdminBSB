@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>ข้อมูลงานบริการ</title>
+    <title>ข้อมูลสถานะ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -85,15 +85,12 @@
     <br>
     <div class="card">
         <div class="header">
-            <h1>ข้อมูลหัวข้อบริการ/วิจัย</h1>
+            <h1>สถานะของงาน</h1>
             <br><br>
             <div>
                 <form action="#>" method="post">
                     กรุณากรอกคำค้นหา <input type="text" name="search">
                     <input type="submit" value="ค้นหา">
-                    <form>
-                        <a href='index.php?Menu=2&Submenu=createnewuser'><button type="button" class="button1">เพิ่มข้อมูลผู้สนใจบริการใหม่ <i class='fas fa-plus-circle' style='font-size:16px'></i></button></a>
-                    </form>
                 </form>
 
             </div>
@@ -105,7 +102,7 @@
                     <th>ประเภทของงานบริการ</th>
                     <th>รายละเอียดงาน</th>
                     <th>ชื่อผู้ขอ</th>
-                    <th>วันที่ยืนขอรับบริการ</th>
+                    <th>สถานะของงาน</th>
                     <th>รายละเอียด</th>
                 </tr>
                 <tr>
@@ -113,8 +110,8 @@
                     <td>สมมติ</td>
                     <td>สมมติ</td>
                     <td>สมชาย มันม่วง</td>
-                    <td>25/5/65</td>
-                    <td><a href='index.php?Menu=2&Submenu=detailsuser'><button class="button">รายละเอียด</button></a></td>
+                    <td><span class="label label-danger">ไม่ทำงาน</td>
+                    <td><a href='index.php?Menu=2&Submenu=detailsstatus'><button class="button">รายละเอียด</button></a></td>
 
                 </tr>
                 <tr>
@@ -122,7 +119,7 @@
                     <td>สมมติ</td>
                     <td>สมมติ</td>
                     <td>นฤมล แสงจันทร์</td>
-                    <td>25/5/65</td>
+                    <td><span class="label label-success">ทำงาน</span></td>
                     <td><a href='#'><button class="button">รายละเอียด</button></a></td>
                 </tr>
                 <tr>
@@ -130,7 +127,7 @@
                     <td>สมมติ</td>
                     <td>สมมติ</td>
                     <td>มาลาดี มาลาวัน</td>
-                    <td>25/5/65</td>
+                    <td><span class="label label-success">ทำงาน</span></td>
                     <td><a href='#'><button class="button">รายละเอียด</button></a></td>
                 </tr>
             </table>

@@ -1,6 +1,6 @@
 <?php
 $number = iconv("utf-8", "tis-620", $_REQUEST["Number"]);
-$sql = "SELECT * FROM name";
+$sql = "SELECT * FROM name ";
 
 if ($number != "") {
     $sql .= " where Number like '%$number%' ";
@@ -22,6 +22,7 @@ if ($number != "") {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <style>
     body {
         font-family: 'Prompt', sans-serif;
@@ -81,7 +82,7 @@ if ($number != "") {
         border: none;
         border-radius: 12px;
         box-shadow: 0 7px #999;
-        margin-left: 48%;
+        margin-left: 46%;
 
     }
 </style>
@@ -99,13 +100,31 @@ if ($number != "") {
             <br><br>
             <div>
                 <form action="" method="POST">
-                    กรุณากรอกคำค้นหา <input name="Number" type="text" placeholder="Search..." value="<?php echo $_REQUEST["Number"] ?>">
+                    กรุณากรอกเลขที่ผู้เสียภาษี <input name="Number" type="text" placeholder="Search..." value="<?php echo $_REQUEST["Number"] ?>">
                     <button type="submit"><i class="fa fa-search"></i></button>
 
                     <form>
-                        <a href='index.php?Menu=1&Submenu=customeruser'><button type="button" class="button1">เพิ่มข้อมูลลูกค้า <i class='fas fa-plus-circle' style='font-size:16px'></i></button></a>
+                        <button type="button" class="button1" data-toggle="modal" data-target="#myModal">เพิ่มข้อมูลลูกค้า <i class='fas fa-plus-circle' style='font-size:16px'></i></button>
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 class="modal-title">ค้นหาข้อมูล</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="" method="POST">
+                                            กรุณากรอกเลขที่ผู้เสียภาษี <input name="Number2" id="Number2" type="text" placeholder="Search...">
+                                            <button type="button" onclick=" myFunction() "><i class="fa fa-search"></i></button>
+                                            <div id="box_customer_check"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </form>
-                </form>
 
             </div>
 
@@ -158,3 +177,16 @@ if ($number != "") {
 </body>
 
 </html>
+
+<script>
+    function myFunction() {
+        var Number2 = $("#Number2").val();
+        $.post("check_id_vat.php", {
+            Number2: Number2
+        }, function(data, status) {
+            // alert(data);
+            $("#box_customer_check").html(data);
+        })
+        // alert($("#Number2").val());
+    }
+</script>

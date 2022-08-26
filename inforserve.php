@@ -70,7 +70,7 @@
         border: none;
         border-radius: 12px;
         box-shadow: 0 7px #999;
-        margin-left: 39%;
+        margin-left: 43%;
 
     }
 
@@ -80,6 +80,8 @@
         font-family: 'Prompt', sans-serif;
 
     }
+
+
 
 </style>
 
@@ -113,7 +115,7 @@
                     <th>รูปภาพไอคอนบริการ/วิจัย</th>
                     <th>ประเภทของงานบริการ/วิจัย</th>
                     <th>รายละเอียด</th>
-                    <th>สเตตัส</th>
+                    <th>สถานะของงาน</th>
                     <th>แก้ไขข้อมูล</th>
 
                 </tr>
@@ -181,7 +183,7 @@
             <td><img src="./images/ww.png"  width="50"  height="50"></td>
             <td>สมมติ</td>
             <td>สมมติ</td>
-            <td><span class="label label-danger">ไม่ทำงาน</td>
+            <td><span class="label label-danger">ไม่ทำงาน</span></td>
             <td><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i></button></td>
         </tr>
         <tr>
@@ -189,7 +191,7 @@
             <td><img src="./images/ww.png"  width="50"  height="50"></td>
             <td>สมมติ</td>
             <td>สมมติ</td>
-            <td><span class="label label-success">ทำงาน</td>
+            <td><span class="label label-success">ทำงาน</span></td>
             <td><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i></button></td>
         </tr>
         </table>

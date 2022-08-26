@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
-
 </head>
 <style>
     body {
@@ -119,22 +118,26 @@
         font-size: 16px;
 
     }
-    #myModal{
+
+    #myModal {
         color: #000;
         font-size: 16px;
     }
-    #myModal2{
+
+    #myModal2 {
         color: #000;
         font-size: 16px;
     }
-    #myModal3{
+
+    #myModal3 {
         color: #000;
         font-size: 16px;
     }
-    .nn{
+
+    .nn {
         background-color: #BEABA7;
         width: 60%;
-        
+
     }
 </style>
 
@@ -144,7 +147,7 @@
         <div class="container-fluid">
             <div class="row clearfix">
                 <div class="col-xs-12 col-sm-9">
-                    <div class="card">
+                    <div class="card ">
                         <div class="body">
                             <div>
                                 <h2 class="w3-center">รายละเอียดข้อมูลลูกค้า</h2>
@@ -158,35 +161,19 @@
 
 
                                 <form action="#" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" method="POST" enctype="multipart/form-data">
-
-                                    <h5>ตำแหน่ง</h5>
-                                    <div class="w3-row w3-section">
-                                        <div class="w3-col" style="width:50px"><i class='fas fa-id-card-alt' style='font-size:30px'></i></div>
-                                        <div class="w3-rest">
-                                            <text class="ss">กรอ.</text>
-                                        </div>
-                                    </div>
-
-                                    <h5>เลขที่ผู้เสียภาษี</h5>
-                                    <div class="w3-row w3-section">
-                                        <div class="w3-col" style="width:50px"><i class='fas fa-book' style='font-size:30px'></i></div>
-                                        <div class="w3-rest">
-                                            <text class="ss">7777777777777</text>
-                                        </div>
-                                    </div>
-
                                     <h5>คำนำหน้าชื่อ</h5>
                                     <div class="w3-row w3-section">
                                         <div class="w3-col" style="width:50px"><i class='fas fa-user-alt' style='font-size:30px'></i></div>
                                         <div class="w3-rest">
-                                            <text class="ss">นาย</text>
+                                            <text class="ss form-control">นาย</text>
                                         </div>
                                     </div>
+
                                     <h5>ชื่อ</h5>
                                     <div class="w3-row w3-section">
                                         <div class="w3-col" style="width:50px"><i class='fas fa-user-alt' style='font-size:30px'></i></div>
                                         <div class="w3-rest">
-                                            <text class="ss">สมาชาย</text>
+                                            <text class="ss form-control">สมาชาย</text>
                                         </div>
                                     </div>
 
@@ -194,7 +181,7 @@
                                     <div class="w3-row w3-section">
                                         <div class="w3-col" style="width:50px"><i class='fas fa-user-alt' style='font-size:30px'></i></div>
                                         <div class="w3-rest">
-                                            <text class="ss">มันม่วง</text>
+                                            <text class="ss form-control">มันม่วง</text>
                                         </div>
                                     </div>
 
@@ -202,9 +189,75 @@
                                     <div class="w3-row w3-section">
                                         <div class="w3-col" style="width:50px"><i class='fas fa-building' style='font-size:30px'></i></div>
                                         <div class="w3-rest">
-                                            <text class="ss">สมมติ</text>
+                                            <text class="ss form-control">สมมติ</text>
                                         </div>
                                     </div>
+
+                                    <h5>ตำแหน่ง</h5>
+                                    <div class="w3-row w3-section">
+                                        <div class="w3-col" style="width:50px"><i class='fas fa-id-card-alt' style='font-size:30px'></i></div>
+                                        <div class="w3-rest">
+                                            <text class="ss form-control">กรอ.</text>
+                                        </div>
+                                    </div>
+
+                                    <div class="w3-row w3-section">
+                                        <div class="demo-radio-button">
+                                            <input name="group5" type="radio" id="radio_34" class="with-gap radio-col-indigo" />
+                                            <label for="radio_34">สำนักงานใหญ่</label>
+                                            <input name="group5" type="radio" id="radio_35" class="with-gap radio-col-indigo" checked />
+                                            <label for="radio_35">สาขาย่อย</label>
+                                        </div>
+                                    </div>
+
+                                    <h5>ชื่อสาขาหรือเลขที่สาขา</h5>
+                                    <div class="w3-row w3-section">
+                                        <div class="w3-col" style="width:50px"><i class='fas fa-building' style='font-size:30px'></i></div>
+                                        <div class="w3-rest">
+                                            <text class="ss form-control">สมมติ</text>
+                                        </div>
+                                    </div>
+
+                                    <h5>เลขที่ผู้เสียภาษี</h5>
+                                    <div class="w3-row w3-section">
+                                        <div class="w3-col" style="width:50px"><i class='fas fa-book' style='font-size:30px'></i></div>
+                                        <div class="w3-rest">
+                                            <text class="ss form-control">7777777777777</text>
+                                        </div>
+                                    </div>
+
+                                    <h5>ประเภทกิจการ</h5>
+                                    <div class="w3-row w3-section">
+                                        <div class="w3-col" style="width:50px"><i class='fas fa-book' style='font-size:30px'></i></div>
+                                        <div class="w3-rest">
+                                            <text class="ss form-control">สมมติ</text>
+                                        </div>
+                                    </div>
+
+                                    <h5>อีเมล</h5>
+                                    <div class="w3-row w3-section">
+                                    <div class="w3-col" style="width:50px"><i class='fas fa-envelope-open' style='font-size:36px'></i></div>
+                                        <div class="w3-rest">
+                                            <text class="ss form-control">สมมติ</text>
+                                        </div>
+                                    </div>
+
+                                    <h5>หมายเลขโทรศัพท์</h5>
+                                    <div class="w3-row w3-section">
+                                        <div class="w3-col" style="width:50px"><i class='fas fa-phone-alt' style='font-size:30px'></i></div>
+                                        <div class="w3-rest">
+                                            <text class="ss form-control">66-66666666</text>
+                                        </div>
+                                    </div>
+
+                                    <h5>Line ID</h5>
+                                    <div class="w3-row w3-section">
+                                        <div class="w3-col" style="width:50px"><i class='fab fa-line' style='font-size:36px'></i></div>
+                                        <div class="w3-rest">
+                                            <text class="ss form-control">66-66666666</text>
+                                        </div>
+                                    </div>
+
                                     <!-- 
 
                                     <div class="w3-row w3-section">
@@ -215,29 +268,9 @@
                                         </div>
                                     </div> -->
 
-                                    <h5>ชื่อสาขา</h5>
-                                    <div class="w3-row w3-section">
-                                        <div class="w3-col" style="width:50px"><i class='fas fa-building' style='font-size:30px'></i></div>
-                                        <div class="w3-rest">
-                                            <text class="ss">สมมติ</text>
-                                        </div>
-                                    </div>
+                                   
 
-                                    <h5>อีเมล</h5>
-                                    <div class="w3-row w3-section">
-                                        <div class="w3-col" style="width:50px"><i class='fas fa-address-card' style='font-size:30px'></i></div>
-                                        <div class="w3-rest">
-                                            <text class="ss">สมมติ</text>
-                                        </div>
-                                    </div>
 
-                                    <h5>หมายเลขโทรศัพท์</h5>
-                                    <div class="w3-row w3-section">
-                                        <div class="w3-col" style="width:50px"><i class='fas fa-phone-alt' style='font-size:30px'></i></div>
-                                        <div class="w3-rest">
-                                            <text class="ss">66-66666666</text>
-                                        </div>
-                                    </div>
 
                                 </form>
 
@@ -268,88 +301,88 @@
                                         <h3 class="nn">ที่อยู่บริษัท</h3>
                                     </div>
                                     <div class="modal-body">
-                                    <table class="table table-borderless"  >
-                                        <tbody>
-                                    <tr>
-                                        <td class="text-right">คำนำหน้าชื่อ</td>
-                                        <td><input class="form-control" placeholder="นาย"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ชื่อผู้ติดต่อ</td>
-                                        <td><input class="form-control" placeholder="สมชาย"></td>
-                                    </tr>
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-right">คำนำหน้าชื่อ</td>
+                                                    <td><input class="form-control" placeholder="นาย"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right">ชื่อผู้ติดต่อ</td>
+                                                    <td><input class="form-control" placeholder="สมชาย"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">นามสกุล</td>
-                                        <td><input class="form-control" placeholder="มันม่วง"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">นามสกุล</td>
+                                                    <td><input class="form-control" placeholder="มันม่วง"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">ชื่อหน่วยงาน</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ตำแหน่ง</td>
-                                        <td> <input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">ชื่อหน่วยงาน</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right">ตำแหน่ง</td>
+                                                    <td> <input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">ชื่อสาขาหรือเลขที่สาขา</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">ชื่อสาขาหรือเลขที่สาขา</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">ประเภทกิจการ</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">ประเภทกิจการ</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">เลขที่ผู้เสียภาษี</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">เลขที่ผู้เสียภาษี</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">เลขที่บริษัท</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">เลขที่บริษัท</td>
+                                                    <td><input class="form-control" placeholder="66-66666666"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">หมู่ที่</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ถนน</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">หมู่ที่</td>
+                                                    <td><input class="form-control" placeholder="66-66666666"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right">ถนน</td>
+                                                    <td><input class="form-control" placeholder="66-66666666"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">ตำบล/แขวง</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">อำเภอ/เขต</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">ตำบล/แขวง</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right">อำเภอ/เขต</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">จังหวัด</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                                <tr>
+                                                    <td class="text-right">จังหวัด</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
 
-                                    <tr>
-                                        <td class="text-right">รหัสไปรษณีย์</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td class="text-right">เบอร์โทรศัพท์</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    </tbody>
-                                  </table>
+                                                <tr>
+                                                    <td class="text-right">รหัสไปรษณีย์</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-right">เบอร์โทรศัพท์</td>
+                                                    <td><input class="form-control" placeholder="สมมติ"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                     <div class="modal-footer">
-                                        <input type="submit" name="submit" value="SAVE" />
+                                        <button type="Submit" class="btn btn-default" data-dismiss="modal">SAVE</button>
                                     </div>
                                 </div>
 
@@ -384,88 +417,88 @@
                                     <h3 class="nn">ที่อยู่ส่งเอกสาร</h3>
                                 </div>
                                 <div class="modal-body">
-                                <table  table class="table table-borderless">
-                                    <tbody>
-                                    <tr>
-                                        <td class="text-right">คำนำหน้าชื่อ</td>
-                                        <td><input class="form-control" placeholder="นาย"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ชื่อผู้ติดต่อ</td>
-                                        <td><input class="form-control" placeholder="สมชาย"></td>
-                                    </tr>
+                                    <table table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-right">คำนำหน้าชื่อ</td>
+                                                <td><input class="form-control" placeholder="นาย"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">ชื่อผู้ติดต่อ</td>
+                                                <td><input class="form-control" placeholder="สมชาย"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">นามสกุล</td>
-                                        <td><input class="form-control" placeholder="มันม่วง"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">นามสกุล</td>
+                                                <td><input class="form-control" placeholder="มันม่วง"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">ชื่อหน่วยงาน</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ตำแหน่ง</td>
-                                        <td> <input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">ชื่อหน่วยงาน</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">ตำแหน่ง</td>
+                                                <td> <input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">ชื่อสาขาหรือเลขที่สาขา</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">ชื่อสาขาหรือเลขที่สาขา</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">ประเภทกิจการ</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">ประเภทกิจการ</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">เลขที่ผู้เสียภาษี</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">เลขที่ผู้เสียภาษี</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">เลขที่ส่งเอกสาร</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">เลขที่ส่งเอกสาร</td>
+                                                <td><input class="form-control" placeholder="66-66666666"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">หมู่ที่</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ถนน</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">หมู่ที่</td>
+                                                <td><input class="form-control" placeholder="66-66666666"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">ถนน</td>
+                                                <td><input class="form-control" placeholder="66-66666666"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">ตำบล/แขวง</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">อำเภอ/เขต</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">ตำบล/แขวง</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">อำเภอ/เขต</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">จังหวัด</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">จังหวัด</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">รหัสไปรษณีย์</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td class="text-right">เบอร์โทรศัพท์</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    </tbody>
-                                  </table>
+                                            <tr>
+                                                <td class="text-right">รหัสไปรษณีย์</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="text-right">เบอร์โทรศัพท์</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class="modal-footer">
-                                    <input type="submit" name="submit" value="SAVE" />
+                                    <button type="Submit" class="btn btn-default" data-dismiss="modal">SAVE</button>
                                 </div>
                             </div>
 
@@ -502,88 +535,88 @@
                                 </div>
 
                                 <div class="modal-body">
-                                 <table  class="table table-borderless" >
-                                    <tbody>
-                                    <tr>
-                                        <td class="text-right">คำนำหน้าชื่อ</td>
-                                        <td><input class="form-control" placeholder="นาย"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ชื่อผู้ติดต่อ</td>
-                                        <td><input class="form-control" placeholder="สมชาย"></td>
-                                    </tr>
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-right">คำนำหน้าชื่อ</td>
+                                                <td><input class="form-control" placeholder="นาย"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">ชื่อผู้ติดต่อ</td>
+                                                <td><input class="form-control" placeholder="สมชาย"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">นามสกุล</td>
-                                        <td><input class="form-control" placeholder="มันม่วง"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">นามสกุล</td>
+                                                <td><input class="form-control" placeholder="มันม่วง"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">ชื่อหน่วยงาน</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ตำแหน่ง</td>
-                                        <td> <input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">ชื่อหน่วยงาน</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">ตำแหน่ง</td>
+                                                <td> <input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">ชื่อสาขาหรือเลขที่สาขา</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">ชื่อสาขาหรือเลขที่สาขา</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">ประเภทกิจการ</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">ประเภทกิจการ</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">เลขที่ผู้เสียภาษี</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">เลขที่ผู้เสียภาษี</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">เลขที่ใบเสร็จ/ใบกำกับภาษี</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">เลขที่ใบเสร็จ/ใบกำกับภาษี</td>
+                                                <td><input class="form-control" placeholder="66-66666666"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">หมู่ที่</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">ถนน</td>
-                                        <td><input class="form-control" placeholder="66-66666666"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">หมู่ที่</td>
+                                                <td><input class="form-control" placeholder="66-66666666"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">ถนน</td>
+                                                <td><input class="form-control" placeholder="66-66666666"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">ตำบล/แขวง</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-right">อำเภอ/เขต</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">ตำบล/แขวง</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-right">อำเภอ/เขต</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">จังหวัด</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
+                                            <tr>
+                                                <td class="text-right">จังหวัด</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
 
-                                    <tr>
-                                        <td class="text-right">รหัสไปรษณีย์</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td class="text-right">เบอร์โทรศัพท์</td>
-                                        <td><input class="form-control" placeholder="สมมติ"></td>
-                                    </tr>
-                                    </tbody>
-                                  </table>
+                                            <tr>
+                                                <td class="text-right">รหัสไปรษณีย์</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="text-right">เบอร์โทรศัพท์</td>
+                                                <td><input class="form-control" placeholder="สมมติ"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class="modal-footer">
-                                    <input type="submit" name="submit" value="SAVE" />
+                                    <button type="Submit" class="btn btn-default" data-dismiss="modal">SAVE</button>
                                 </div>
                             </div>
 

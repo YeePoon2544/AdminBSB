@@ -53,6 +53,10 @@
     h2 {
         font-family: 'Prompt', sans-serif;
     }
+
+    .form-control {
+        width: 207%;
+    }
 </style>
 
 <body>
@@ -60,7 +64,7 @@
         <div class="container-fluid">
             <div class="row clearfix">
                 <div class="col-xs-12 col-sm-9">
-                    <div class="card">
+                    <div class="card bg-blue-grey">
                         <div class="body">
                             <div>
 
@@ -79,7 +83,15 @@
                                     <div class="w3-row w3-section">
                                         <div class="w3-col" style="width:50px"><i class='fas fa-paste' style='font-size:36px'></i></div>
                                         <div class="w3-rest">
-                                            <input class="w3-input w3-border" name="name" type="text" placeholder="ประเภทของงาน">
+                                            <div class="row clearfix">
+                                                <div class="col-sm-6">
+                                                    <select class="form-control show-tick">
+                                                        <option value="">--- เลือกประเภทของงาน ---</option>
+                                                        <option>บริการ</option>
+                                                        <option>วิจัย</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -87,7 +99,7 @@
                                     <div class="w3-row w3-section">
                                         <div class="w3-col" style="width:50px"><i class="fa fa-file-text" style="font-size:36px;"></i></div>
                                         <div class="w3-rest">
-                                            <input class="w3-input w3-border" name="details" type="text" placeholder="รายละเอียด">
+                                            <textarea name="story" cols="95" rows="10" placeholder="รายละเอียด"></textarea>
                                         </div>
                                     </div>
 

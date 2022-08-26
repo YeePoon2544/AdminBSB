@@ -100,8 +100,6 @@
     .demo-radio-button {
         margin-right: 120%;
     }
-
-    
 </style>
 
 <body>
@@ -134,7 +132,7 @@
                     <th>ประเภทของงานบริการ/วิจัย</th>
                     <th>หัวข้อบริการ/วิจัย</th>
                     <th>รายละเอียดบริการ/วิจัย</th>
-                    <th>สเตตัส</th>
+                    <th>สถานะของงาน</th>
                     <th>แก้ไขข้อมูล</th>
 
                 </tr>
@@ -144,7 +142,7 @@
                     <td><img src="./images/ww.png" width="50" height="50"></td>
                     <td>สมมติ</td>
                     <td>สมมติ</td>
-                    <td><button ttpe="bullon" class="button3" data-toggle="modal" data-target="#myModal">รายละเอียดงาน</button>
+                    <td><button type="bullon" class="button3" data-toggle="modal" data-target="#myModal">รายละเอียดงาน</button>
                         <div class="modal fade" id="myModal" role="dialog">
                             <div class="modal-dialog">
 
@@ -159,15 +157,23 @@
                                             <tbody>
                                                 <tr>
                                                     <td class="text-left">ประเภทของงานบริการ/วิจัย</td>
-                                                    <td class="text-left"><text>สมมติ</text></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><text class="form-control">สมมติ</text></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-left">หัวข้อของงานบริการ/วิจัย</td>
-                                                    <td class="text-left"><text>สมมติ</text></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><text class="form-control">สมมติ</text></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-left">รายละเอียด</td>
-                                                    <td class="text-left"><text>สมมติ</text></td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left"><text class="form-control">สมมติ</text></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-left">สถานะของงาน</td>
@@ -194,31 +200,31 @@
                             </div>
                         </div>
 
+
+                    </td>
+                    <td><span class="label label-success">ทำงาน</span></td>
+                    <td><a href='index.php?Menu=1&Submenu=editdetails'><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i> </button></a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="./images/ww.png" width="50" height="50"></td>
+                    <td>สมมติ</td>
+                    <td>สมมติ</td>
+                    <td><button ttpe="bullon" class="button3">รายละเอียดงาน</button></td>
+                    <td><span class="label label-danger">ไม่ทำงาน</span></td>
+                    <td><a href='index.php?Menu=1&Submenu=editdetails'><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i></button></a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="./images/ww.png" width="50" height="50"></td>
+                    <td>สมมติ</td>
+                    <td>สมมติ</td>
+                    <td><button ttpe="bullon" class="button3">รายละเอียดงาน</button></td>
+                    <td><span class="label label-success">ทำงาน</span></td>
+                    <td><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i></button></td>
+                </tr>
+            </table>
         </div>
-        </td>
-        <td><span class="label label-success">ทำงาน</span></td>
-        <td><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i> </button></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><img src="./images/ww.png" width="50" height="50"></td>
-            <td>สมมติ</td>
-            <td>สมมติ</td>
-            <td><button ttpe="bullon" class="button3">รายละเอียดงาน</button></td>
-            <td><span class="label label-danger">ไม่ทำงาน</td>
-            <td><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i></button></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><img src="./images/ww.png" width="50" height="50"></td>
-            <td>สมมติ</td>
-            <td>สมมติ</td>
-            <td><button ttpe="bullon" class="button3">รายละเอียดงาน</button></td>
-            <td><span class="label label-success">ทำงาน</td>
-            <td><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i></button></td>
-        </tr>
-        </table>
-    </div>
 
 </body>
 

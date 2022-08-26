@@ -8,52 +8,45 @@ if ($Menu == "1") {
   $selected2 = "class='selected'";
   if ($Submenu == "inforcustomer") {
     $Fileshow = "inforcustomer.php";
-  } 
-  else if ($Submenu == "datecustomer") {
+  } else if ($Submenu == "datecustomer") {
     $Fileshow = "customeruser/datecustomer.php";
-  }
-  else if ($Submenu == "inforserve") {
+  } else if ($Submenu == "inforserve") {
     $Fileshow = "inforserve.php";
-  }
-  else if ($Submenu == "servedate") {
+  } else if ($Submenu == "servedate") {
     $Fileshow = "customer/servedate.php";
-  }
-  else if ($Submenu == "inforaccess") {
+  } else if ($Submenu == "inforaccess") {
     $Fileshow = "inforaccess.php";
-  }
-  else if ($Submenu == "customeruser") {
+  } else if ($Submenu == "customeruser") {
     $Fileshow = "customeruser/createcustomeruser.php";
-  }
-  else if ($Submenu == "editcustomeruser") {
+  } else if ($Submenu == "editcustomeruser") {
     $Fileshow = "customeruser/editcustomeruser.php";
-  }
-  else if ($Submenu == "createservedate") {
+  } else if ($Submenu == "createservedate") {
     $Fileshow = "customer/createservedate.php";
-  }
-  else if ($Submenu == "inforsection") {
+  } else if ($Submenu == "inforsection") {
     $Fileshow = "inforsection.php";
-  }
-  else if ($Submenu == "createsection") {
+  } else if ($Submenu == "createsection") {
     $Fileshow = "sectionserve/createsection.php";
-  }
-  else if ($Submenu == "infordetails") {
+  } else if ($Submenu == "infordetails") {
     $Fileshow = "infordetails.php";
-  }
-  else if ($Submenu == "createdetails") {
+  } else if ($Submenu == "createdetails") {
     $Fileshow = "particulars/createdetails.php";
+  } else if ($Submenu == "editdetails") {
+    $Fileshow = "particulars/editdetails.php";
   }
- 
 } else if ($Menu == "2") {
   $selected2 = "class='selected'";
   if ($Submenu == "newuser") {
     $Fileshow = "user/newuser.php";
-  } else if ($Submenu == "appointment") {
-    $Fileshow = "appointment.php";
-  }
-} else if ($Menu == "3") {
-  $selected3 = "class='selected'";
-  if ($Submenu == "meet") {
-    $Fileshow = "meet.php";
+  } else if ($Submenu == "detailsuser") {
+    $Fileshow = "user/detailsuser.php";
+  } else if ($Submenu == "createnewuser") {
+    $Fileshow = "user/createnewuser.php";
+  } else if ($Submenu == "edituser") {
+    $Fileshow = "user/edituser.php";
+  } else if ($Submenu == "indexstatus") {
+    $Fileshow = "status/indexstatus.php";
+  } else if ($Submenu == "detailsstatus") {
+    $Fileshow = "status/detailsstatus.php";
   }
 } else if ($Menu == "4") {
   $selected4 = "class='selected'";
@@ -72,7 +65,7 @@ if ($Menu == "1") {
     $Fileshow = "qa.php";
   }
 } else {
-  $Fileshow = "news2.php";
+  $Fileshow = "#";
 }
 ?>
 <!DOCTYPE html>
@@ -184,7 +177,7 @@ if ($Menu == "1") {
                   <a class="sub-menu" onclick="location. href='index.php?Menu=1&Submenu=inforcustomer';">ข้อมูลลูกค้า </a>
                 </li>
                 <li>
-                <a href="javascript:void(0);" class="menu-toggle">
+                  <a href="javascript:void(0);" class="menu-toggle">
                     <span>ข้อมูลงานบริการ</span>
                   </a>
                   <ul class="ml-menu">
@@ -211,10 +204,10 @@ if ($Menu == "1") {
                 </a>
                 <ul class="ml-menu">
                   <li>
-                  <a class="sub-menu" onclick="location. href='index.php?Menu=2&Submenu=newuser';">ข้อมูลผู้สนใจบริการใหม่</a>
+                    <a class="sub-menu" onclick="location. href='index.php?Menu=2&Submenu=newuser';">ข้อมูลผู้สนใจบริการใหม่</a>
                   </li>
                   <li>
-                    <a href="#">สถานะของงาน</a>
+                    <a class="sub-menu" onclick="location. href='index.php?Menu=2&Submenu=indexstatus';">สถานะของงาน</a>
                   </li>
                   <li>
                     <a href="#">ยอดเงินที่ชำระ</a>

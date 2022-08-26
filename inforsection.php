@@ -66,15 +66,14 @@
         text-align: center;
         outline: none;
         color: white;
-        background-color: #AA7C7A;
+        background-color: #8080ff;
         border: none;
         border-radius: 12px;
         box-shadow: 0 7px #999;
-        margin-left: 39%;
+        margin-left: 43%;
 
     }
-
-
+    
     .modal-title {
         text-align: left;
         font-family: 'Prompt', sans-serif;
@@ -112,7 +111,7 @@
                     <th>ประเภทของงานบริการ/วิจัย</th>
                     <th>หัวข้อบริการ/วิจัย</th>
                     <th>รายละเอียด</th>
-                    <th>สเตตัส</th>
+                    <th>สถานะของงาน</th>
                     <th>แก้ไขข้อมูล</th>
 
                 </tr>
@@ -168,7 +167,7 @@
                                         </table>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">SAVE</button>
+                                        <button type="Submit" class="btn btn-default" data-dismiss="modal">SAVE</button>
                                     </div>
                                 </div>
 
@@ -186,7 +185,7 @@
             <td>สมมติ</td>
             <td>สมมติ</td>
             <td>สมมติ</td>
-            <td><span class="label label-danger">ไม่ทำงาน</td>
+            <td><span class="label label-danger">ไม่ทำงาน</span></td>
             <td><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i></button></td>
         </tr>
         <tr>
@@ -195,7 +194,7 @@
             <td>สมมติ</td>
             <td>สมมติ</td>
             <td>สมมติ</td>
-            <td><span class="label label-success">ทำงาน</td>
+            <td><span class="label label-success">ทำงาน</span></td>
             <td><button type="button" class="button">แก้ไขข้อมูล <i class='fas fa-edit' style='font-size:16px'></i></button></td>
         </tr>
         </table>
